@@ -4,7 +4,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // screens
 import HomeScreen from './screens/HomeScreen';
 import ChatScreen from './screens/ChatScreen';
-import ScanScreen from './screens/ScanScreen';
 import TestScreen from './screens/TestScreen';
 import { ScreenStackHeaderBackButtonImage } from 'react-native-screens';
 
@@ -16,7 +15,6 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
         <Stack.Screen name="Chat" component={ChatScreen}/>
-        <Stack.Screen name="Scan" component={ScanScreen}/>
         <Stack.Screen name="Test" component={TestScreen} options={{title: "Scanning"}}/>
       </Stack.Navigator>
     </NavigationContainer>
